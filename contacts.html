@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | Gopalakrishnan Kumar</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+            background:#f4f4f4;
+            color:#333;
+        }
+
+        header{
+            background:#111;
+            padding:20px 50px;
+        }
+
+        nav{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            flex-wrap:wrap;
+        }
+
+        nav h1{
+            color:white;
+            font-size:28px;
+        }
+
+        nav ul{
+            display:flex;
+            list-style:none;
+            gap:25px;
+        }
+
+        nav ul li a{
+            text-decoration:none;
+            color:white;
+            font-weight:bold;
+            transition:0.3s;
+        }
+
+        nav ul li a:hover{
+            color:#00bfff;
+        }
+
+        .contact-section{
+            max-width:1100px;
+            margin:50px auto;
+            padding:40px;
+            background:white;
+            border-radius:12px;
+            box-shadow:0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .contact-title{
+            text-align:center;
+            margin-bottom:40px;
+        }
+
+        .contact-title h2{
+            font-size:40px;
+            color:#007BFF;
+            margin-bottom:15px;
+        }
+
+        .contact-title p{
+            font-size:18px;
+            color:#555;
+        }
+
+        .contact-container{
+            display:flex;
+            gap:40px;
+            flex-wrap:wrap;
+        }
+
+        .contact-info{
+            flex:1;
+        }
+
+        .contact-info h3{
+            margin-bottom:20px;
+            color:#007BFF;
+        }
+
+        .contact-info p{
+            margin-bottom:15px;
+            font-size:17px;
+        }
+
+        .contact-form{
+            flex:1;
+        }
+
+        .contact-form h3{
+            margin-bottom:20px;
+            color:#007BFF;
+        }
+
+        .contact-form form{
+            display:flex;
+            flex-direction:column;
+        }
+
+        .contact-form input,
+        .contact-form textarea{
+            padding:14px;
+            margin-bottom:20px;
+            border:1px solid #ccc;
+            border-radius:6px;
+            font-size:16px;
+        }
+
+        .contact-form textarea{
+            resize:none;
+            height:150px;
+        }
+
+        .contact-form button{
+            padding:14px;
+            background:#007BFF;
+            color:white;
+            border:none;
+            border-radius:6px;
+            font-size:16px;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        .contact-form button:hover{
+            background:#0056b3;
+        }
+
+        .social-links{
+            margin-top:25px;
+        }
+
+        .social-links a{
+            display:inline-block;
+            margin-right:15px;
+            text-decoration:none;
+            color:#007BFF;
+            font-weight:bold;
+        }
+
+        .social-links a:hover{
+            text-decoration:underline;
+        }
+
+        footer{
+            background:#111;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:50px;
+        }
+
+        @media(max-width:768px){
+
+            nav{
+                flex-direction:column;
+            }
+
+            nav ul{
+                margin-top:15px;
+                flex-wrap:wrap;
+                justify-content:center;
+            }
+
+            .contact-container{
+                flex-direction:column;
+            }
+
+            .contact-title h2{
+                font-size:32px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+
+        <nav>
+
+            <h1>AI Portfolio</h1>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- Contact Section -->
+
+    <section class="contact-section">
+
+        <div class="contact-title">
+
+            <h2>Contact Me</h2>
+
+            <p>
+                Feel free to connect with me for AI, Data Science,
+                Machine Learning, Analytics, and Freelance Projects.
+            </p>
+
+        </div>
+
+        <div class="contact-container">
+
+            <!-- Contact Information -->
+
+            <div class="contact-info">
+
+                <h3>Get In Touch</h3>
+
+                <p>
+                    <strong>Name:</strong>
+                    Gopalakrishnan Kumar
+                </p>
+
+                <p>
+                    <strong>Email:</strong>
+                    krishgopal.kumar86@gmail.com
+                </p>
+
+                <p>
+                    <strong>Phone:</strong>
+                    +91 8928316507
+                </p>
+
+                <p>
+                    <strong>Location:</strong>
+                    Mumbai, Maharashtra, India
+                </p>
+
+                <p>
+                    <strong>Specialization:</strong>
+                    AI Engineering, Data Science, Generative AI,
+                    Machine Learning, Deep Learning, Forecasting,
+                    NLP, and Analytics
+                </p>
+
+                <!-- Social Links -->
+
+                <div class="social-links">
+
+                    <a href="https://github.com/Gopal21236" target="_blank">
+                        GitHub
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/gopalakrishnan-kumar-a7330110/"
+                       target="_blank">
+                        LinkedIn
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Contact Form -->
+
+            <div class="contact-form">
+
+                <h3>Send Message</h3>
+
+                <form onsubmit="showMessage(event)">
+
+                    <input type="text"
+                           placeholder="Enter Your Name"
+                           required>
+
+                    <input type="email"
+                           placeholder="Enter Your Email"
+                           required>
+
+                    <textarea placeholder="Write Your Message"
+                              required></textarea>
+
+                    <button type="submit">
+                        Send Message
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 Gopalakrishnan Kumar | AI & Data Science Portfolio
+        </p>
+
+    </footer>
+
+    <!-- JavaScript -->
+
+    <script>
+
+        function showMessage(event){
+
+            event.preventDefault();
+
+            alert("Thank you! Your message has been submitted successfully.");
+
+        }
+
+    </script>
+
+</body>
+
+</html>
